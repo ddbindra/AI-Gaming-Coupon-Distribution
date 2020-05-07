@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'localhost'
 app.config['MYSQL_USER'] = 'user1'
-app.config['MYSQL_PASSWORD'] = '*******'
+app.config['MYSQL_PASSWORD'] = 'password'
 app.config['MYSQL_DB'] = 'AIGAMING'
 
 mysql = MySQL(app)
@@ -83,8 +83,4 @@ def users():
         return render_template('users.html',userDetails=userDetails)'''
 
 if __name__ == '__main__':
-<<<<<<< HEAD
     app.run(debug=True)
-=======
-    app.run(debug=True) '''
->>>>>>> cc06f3c22dbf9c7c7f1eb4fcfd94d493791b7380
