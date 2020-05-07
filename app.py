@@ -24,9 +24,10 @@ def index():
         #acc = cur.fetchall()
         if temp > 0:
         	acc = cur.fetchall()
-        	#return render_template('users.html',userDetails=userDetails)
+
+        	return render_template('token.html',acc=acc)
         	print(acc)
-        	return acc[0][1]
+        	#return acc[0][1]
 
         	#return render_template('users.html',acc=acc)
         	#return 'success'
@@ -79,7 +80,7 @@ def users():
     resultValue = cur.execute("SELECT * FROM")
     if resultValue > 0:
         userDetails = cur.fetchall()
-        return render_template('users.html',userDetails=userDetails)
+        return render_template('users.html',userDetails=userDetails)'''
 
 if __name__ == '__main__':
-    app.run(debug=True) '''
+    app.run(debug=True)
