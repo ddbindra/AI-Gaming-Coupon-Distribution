@@ -9,7 +9,11 @@
 </head>
 <body>
    <div class="headingtoken">
+     {% if notfound %}
+     <h2> Sorry your email was not found </h2>
+     {% else %}
       <h2>Your token is : {{ acc[0][1] }}</h2>
+     {% endif %}
     </div>
       <div class="image">
         <img src="/static/aigaming_w.png" alt="aigaming_logo">
